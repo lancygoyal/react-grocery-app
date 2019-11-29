@@ -40,7 +40,7 @@ const useStyles = makeStyles({
 interface ProductProps {
   data: any;
   cart: any;
-  onAdd: any;
+  onAdd?: any;
 }
 
 const Product: FunctionComponent<ProductProps> = ({ data, cart, onAdd }) => {
