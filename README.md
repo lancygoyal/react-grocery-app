@@ -38,5 +38,5 @@ npm test
     |   ├── constants
 	|   ├── pages             	# app pages
     │   ├── index.js
-	|	├── redux               # redux setup & modules
+    |	├── redux               # redux setup & modules
     └── package.json          	# node dependencies
