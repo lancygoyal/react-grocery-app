@@ -1,4 +1,5 @@
 
+
 ## React App
 
 React.js App Powered By Redux and Firebase.
@@ -29,14 +30,13 @@ npm test
 ### Folder structure
 
     .
-    ├── __test__				      # unit test cases
+    ├── __test__				# unit test cases
     │   ├── components
     ├── src
-    |   ├── components        # reuseable components
-    |   ├── config					  # app configs
+    |   ├── components        	# reuseable components
+    |   ├── config				# app configs
     |   ├── constants
-	  |   ├── pages             # app pages
+	|   ├── pages             	# app pages
     │   ├── index.js
-	  ├── redux               	# redux setup & modules
-    └── package.json          # node dependencies
-
+	|	├── redux               # redux setup & modules
+    └── package.json          	# node dependencies
