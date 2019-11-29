@@ -36,7 +36,7 @@ npm test
     |   ├── components        	# reuseable components
     |   ├── config				# app configs
     |   ├── constants
-    |	├── pages             	# app pages
-    |	├── redux               # redux setup & modules
+    |   ├── pages
+    |   ├── redux
     │   ├── index.js
     └── package.json          	# node dependencies
