@@ -39,10 +39,11 @@ const useStyles = makeStyles({
 
 interface ProductProps {
   data: any;
+  cart: any;
   onAdd: any;
 }
 
-const Product: FunctionComponent<ProductProps> = ({ data, onAdd }) => {
+const Product: FunctionComponent<ProductProps> = ({ data, cart, onAdd }) => {
   const classes = useStyles({});
   return (
     <Card className={classes.card} color="secondary">
@@ -59,7 +60,9 @@ const Product: FunctionComponent<ProductProps> = ({ data, onAdd }) => {
       </CardContent>
       <CardActions>
         <Button size="small" variant="outlined" onClick={onAdd}>
-          Add to cart
+          {cart.items && cart.items[data.id]
+            ? `${cart.items[data.id]} Added`
+            : "Add to cart"}
         </Button>
         <IconButton aria-label="add to favorites">
           <FavoriteIcon />

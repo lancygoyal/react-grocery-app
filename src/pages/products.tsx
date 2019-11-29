@@ -31,7 +31,7 @@ class Products extends React.Component<ProductsProps> {
   };
 
   render() {
-    const { products } = this.props;
+    const { products, cart } = this.props;
     return (
       <div>
         <Typography
@@ -49,7 +49,12 @@ class Products extends React.Component<ProductsProps> {
         >
           {products.map((data, idx) => (
             <Grid item xs={12} sm={6} md={4} lg={3}>
-              <Product key={idx} data={data} onAdd={this.addToCart(data.id)} />
+              <Product
+                key={idx}
+                data={data}
+                cart={cart}
+                onAdd={this.addToCart(data.id)}
+              />
             </Grid>
           ))}
         </Grid>
