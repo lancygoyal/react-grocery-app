@@ -3,14 +3,14 @@ import "firebase/auth";
 import "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC1KL1n3rSj0GfGpfWbJv2F0oH9SkEtMNM",
-  authDomain: "grocery-app-13afb.firebaseapp.com",
-  databaseURL: "https://grocery-app-13afb.firebaseio.com",
-  projectId: "grocery-app-13afb",
-  storageBucket: "grocery-app-13afb.appspot.com",
-  messagingSenderId: "470684848645",
-  appId: "1:470684848645:web:6acb11176c44fe8886c26c",
-  measurementId: "G-3M1CY0DBYC"
+  apiKey: "",
+  authDomain: "",
+  databaseURL: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+  appId: "",
+  measurementId: ""
 };
 
 firebase.initializeApp(firebaseConfig);
