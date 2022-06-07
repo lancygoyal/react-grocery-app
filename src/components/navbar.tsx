@@ -24,7 +24,13 @@ const useStyles = makeStyles((theme: Theme) =>
       [theme.breakpoints.up("sm")]: {
         display: "block"
       }
-    }
+    },
+    avatar: {
+      margin: 1,
+      backgroundColor: theme.palette.secondary.main,
+      width: 36,
+      height: 36
+    },
   })
 );
 
@@ -97,7 +103,7 @@ export const Navbar = ({ history, user, products, cart, firebase }) => {
                 aria-label={user.data.displayName}
                 onClick={() => history.push("/hello")}
               >
-                <Avatar alt={user.data.displayName} src={user.data.photoURL} />
+                <Avatar alt={user.data.displayName} src={user.data.photoURL} className={classes.avatar} />
               </IconButton>
             </>
           )}

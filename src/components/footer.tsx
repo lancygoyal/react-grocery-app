@@ -9,7 +9,7 @@ const Copyright = () => {
     <Typography variant="body2" color="textSecondary">
       {"Copyright © "}
       <Link color="inherit" href="https://material-ui.com/">
-        Lancy Goyal
+        XYZ
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
